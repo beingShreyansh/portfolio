@@ -8,7 +8,421 @@
     <title>Shreyansh's PortFolio !</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 29, 29);
+}
+
+.navbar {
+
+    text-align: right;
+    padding: 20px 75px 0px 0px;
+    height: 10vh;
+
+}
+
+.navbar li {
+
+    display: inline;
+    font-size: 22px;
+    padding-right: 45px;
+    margin-top: 55px;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+
+}
+
+.navbar li a {
+    color: rgb(255, 208, 0);
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+    padding-left: 100PX;
+}
+
+.main {
+    color: white;
+}
+
+.main img {
+    padding: 25px 0px 0px 0px;
+    float: left;
+}
+
+.main div {
+    font-family: 'Source Serif Pro', serif;
+    padding-top: 3px;
+}
+
+.hi {
+    font-size: 52px;
+}
+
+.name {
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(255, 208, 0);
+    font-size: 45px;
+
+}
+
+.bio p {
+    font-size: 18px;
+    padding-top: 25px;
+
+
+}
+
+.biodata {
+    margin: 120px 50px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(255, 208, 0);
+    color: rgb(15, 15, 15);
+    border-radius: 20px;
+    padding: 9px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 25px;
+
+}
+
+button:hover {
+    background-color: rgb(15, 15, 15);
+    color: rgb(255, 208, 0);
+    border-radius: 20px;
+    padding: 9px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 25px;
+    font-weight: bold;
+    animation-delay: 20ms;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.quote {
+    height: 10vh;
+    color: rgb(167, 21, 21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 55px;
+
+}
+
+.type {
+    width: 75%;
+    text-align: center;
+    animation: typing 4s steps(100), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 30px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.contactMe {
+    margin-top: 4%;
+    margin-left: 200px;
+    color: rgb(255, 208, 0);
+}
+
+.contactMe h1 {
+    font-size: 40px;
+}
+
+.red {
+    color: rgb(167, 21, 21);
+    ;
+}
+
+form {
+    color: rgb(255, 208, 0);
+    padding: 0 50px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+input[type=text],
+select {
+    width: 450px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(167, 21, 21);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#name {
+    margin-left: 49px;
+}
+
+input[type=email],
+select {
+    width: 450px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(167, 21, 21);
+    padding: 12px 20px;
+    margin: 8px 40px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+input[type=number],
+select {
+    width: 450px;
+    color: rgb(167, 21, 21);
+    font-family: 'Work Sans', sans-serif;
+    padding: 12px 20px;
+    margin: 12px 58px;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+input[type=radio],
+select {
+    padding: 12px 20px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 8px 10px;
+    color: rgb(167, 21, 21);
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.contact {
+    padding-left: 29px;
+}
+
+input[type=submit] {
+    width: 200px;
+    background-color: rgb(255, 208, 0);
+    color: rgb(20, 17, 17);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 1000;
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(255, 224, 86);
+}
+
+.fullContact {
+    display: flex;
+
+}
+
+.logoContact {
+    float: right;
+    padding-top: 5%;
+    padding-left: 50px;
+}
+
+#isenquiry {
+    margin-top: 25px;
+}
+
+.contactMe h2 {
+    color: rgb(32, 29, 29);
+    margin: 35px 0px 8px 165px;
+    font-size: 26px;
+}
+
+.contactMe h4 {
+    color: rgb(110, 110, 110);
+    font-size: 18px;
+    margin: 0px 0px 10px 190px;
+}
+
+.skills {
+    display: flex;
+}
+
+.skillset {
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.lang {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.skills {
+    margin-top: 5%;
+}
+
+.skills img {
+    margin-left: 180px;
+    margin-top: 130px;
+}
+
+.skillset {
+    padding: 200px 120px 0px 141px;
+    font-size: 25px;
+}
+
+.skillset div {
+    margin-left: 200px;
+    height: 6px;
+    border-radius: 502px;
+    background-color: rgb(167, 21, 21)
+}
+
+.ep {
+    width: 400px;
+}
+
+.sfp {
+    width: 375px;
+}
+
+.fp {
+    width: 250px;
+}
+
+.tfp {
+    width: 125px;
+}
+
+.skills h1 {
+    color: rgb(255, 208, 0);
+    position: absolute;
+    padding-left: 37vw;
+    padding-top: 30px;
+}
+
+
+
+.feedback h1 {
+    color: rgb(255, 208, 0);
+    padding-top: 120px;
+    padding-bottom: 100px;
+    text-align: center;
+    text-align: center;
+}
+
+.feedback span {
+    color: rgb(167, 21, 21);
+}
+
+.feedback img {
+    float: left;
+    padding-left: 200px;
+    padding-bottom: 60px;
+    padding-right: 320px;
+}
+
+textarea {
+    width: 30%;
+    color: rgb(255, 208, 0);
+    height: 380px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    border: 5px solid #ccc;
+    border-radius: 50px;
+    background-color: rgb(32, 29, 29);
+    font-size: 20px;
+    resize: none;
+}
+
+.feedback input {
+    width: 320px;
+}
+
+footer {
+    height: 120px;
+    width: 100%;
+    background-color: #322e2f;
+    justify-content: center;
+}
+
+footer h3 {
+    background-color: #322e2f;
+    color: rgb(15, 14, 14);
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer p {
+    background-color: #322e2f;
+    color: rgb(15, 14, 14);
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 9%;
+}
+
+footer li {
+    background-color: #322e2f;
+    color: rgb(15, 14, 14);
+    float: right;
+    padding-right: 40px;
+    margin-bottom: 0px;
+
+}
+
+footer li a {
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+    background-color: #322e2f;
+}
+
+footer li img {
+
+    background-color: #322e2f;
+}
+    </style>
 <body>
     <div class="container">
 
